@@ -25,10 +25,10 @@ void edu_bubble_sort(void *ptr, size_t count, size_t size, edu_cmp cmp) {
     while (swapped) {
         swapped = 0;
         for (size_t i = 0; i < count - 1; ++i) {
-            const void *val1 = (char *) ptr + i * size;
-            const void *val2 = (char *) ptr + (i + 1) * size;
+            void *val1 = (char *) ptr + i * size;
+            void *val2 = (char *) ptr + (i + 1) * size;
             if (cmp(val1, val2) > 0) {
-                edu_swap((char *) ptr + i * size, (char *) ptr + (i + 1) * size, size);
+                edu_swap(val1, val2, size);
                 swapped = 1;
             }
         }
