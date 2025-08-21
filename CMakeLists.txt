@@ -12,9 +12,9 @@ set(CMAKE_C_STANDARD 11)
 
 set(CRITERION_DIR "${CMAKE_SOURCE_DIR}/external/criterion-2.4.2")
 
-add_library(my_sorts STATIC src/my_sorts.c)
-target_include_directories(my_sorts PUBLIC include)
-target_compile_options(my_sorts PRIVATE -Wall -Wextra -pedantic -Werror)
+add_library(edu_sorts STATIC src/edu_sorts.c)
+target_include_directories(edu_sorts PUBLIC include)
+target_compile_options(edu_sorts PRIVATE -Wall -Wextra -pedantic -Werror)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address,leak,undefined")
 

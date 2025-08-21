@@ -1,5 +1,5 @@
 #include "criterion/criterion.h"
-#include "my_sorts.h"
+#include "edu_sorts.h"
 
 #include <stdlib.h>
 #include <time.h>

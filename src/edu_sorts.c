@@ -1,4 +1,4 @@
-#include "my_sorts.h"
+#include "edu_sorts.h"
 
 #include <string.h>
 #include <stdio.h>
